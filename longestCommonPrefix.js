@@ -37,6 +37,9 @@ var longestCommonPrefix = function (strs) {
     return strs[0];
 };
 
+// Time Complexity : O(n^2)
+// Space Complexity: O(1)
+
 
 // Solution #2: Array.every()
 // Using the wonderful JavaScript array function every() (which returns whether or not every element in an array passes a given condition), we can remove the (visible) second loop and tidy up our code a little. But to be honest, it’s otherwise a near-identical solution (except for the fact that unlike with the double-loop approach, this one also checks the initial string, which is technically a pointless comparison as that’s where we started):
@@ -57,3 +60,6 @@ var longestCommonPrefix = function (strs) {
 
     return strs[0];
 };
+
+// Time Complexity : O(n)
+// Space Complexity: O(1)
